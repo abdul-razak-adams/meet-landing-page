@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1504px;
+  height: 358px;
+}
+.button {
+}
+.downloadButton {
+  background-color: #4d96a9;
+}
+.aboutMeetButton {
+  background-color: #855fb1;
+}
+
+.aboutMeetButton:hover {
+  background-color: #d9b8ff;
+}
+.downloadButton:hover {
+  background-color: #8fe3f9;
+}
