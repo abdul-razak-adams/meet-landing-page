@@ -3,10 +3,68 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1504px;
-  height: 358px;
+  row-gap: 61px;
+  /* background-color: #4d96a9; */
+  width: 100%;
+  padding-top: 80px;
+  overflow-x: hidden;
 }
+
+#logo {
+  width: 119px;
+  height: 28px;
+}
+#logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  width: 105%;
+  gap: 50px;
+  height: 358px;
+  /* background-color: #855fb1; */
+}
+.heroImageDesktop {
+  width: 100%;
+}
+#heroImageTablet {
+  display: none;
+  width: 105%;
+}
+#titleContainer {
+  max-width: 540px;
+  min-width: 420px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#subtitle {
+  text-align: center;
+}
+
+#titleButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  /* background-color: #4d96a9; */
+}
+
 .button {
+  color: #fafafa;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 .downloadButton {
   background-color: #4d96a9;
@@ -20,4 +78,40 @@
 }
 .downloadButton:hover {
   background-color: #8fe3f9;
+}
+
+@media screen and (max-width: 920px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 105%;
+    height: auto;
+    gap: 72px;
+  }
+  #titileContainer {
+    min-width: none;
+  }
+  .heroImageDesktop {
+    display: none;
+  }
+  #heroImageTablet {
+    display: block;
+  }
+  #titleButtons {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #titleButtons {
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+    /* background-color: #4d96a9; */
+  }
+  #titleContainer {
+    height: auto;
+    gap: 50px;
+  }
 }
