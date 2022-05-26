@@ -7,7 +7,6 @@
   /* background-color: #4d96a9; */
   width: 100%;
   padding-top: 80px;
-  overflow-x: hidden;
 }
 
 #logo {
@@ -38,15 +37,14 @@
 }
 #titleContainer {
   max-width: 540px;
-  min-width: 420px;
+  min-width: 431px;
   height: 304px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
 }
-#subtitle {
+.bodyText {
   text-align: center;
 }
 
@@ -85,12 +83,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 105%;
     height: auto;
     gap: 72px;
   }
   #titileContainer {
+    width: 80%;
+    height: auto;
     min-width: none;
+  }
+  .bodyText {
+    width: 80%;
+    height: max-content;
   }
   .heroImageDesktop {
     display: none;
@@ -108,10 +111,12 @@
     flex-direction: column;
     width: 300px;
     gap: 20px;
+    padding: 0px 20px;
     /* background-color: #4d96a9; */
   }
   #titleContainer {
-    height: auto;
+    width: 100%;
+
     gap: 50px;
   }
 }

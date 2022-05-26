@@ -1,0 +1,86 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 117px;
+}
+
+.number {
+  width: 56px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.number span:first-child {
+  width: 2px;
+  height: 84px;
+  background-color: #87879d;
+}
+
+.number span:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #87879d;
+  border-radius: 100%;
+}
+
+#imageTiles {
+  margin-top: 64px;
+  max-width: 1110px;
+  height: 242px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.tileImage {
+  height: 100%;
+  width: 100%;
+}
+
+#about {
+  width: 540px;
+  height: 240px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  overflow-x: hidden;
+}
+#overline {
+  color: #8fe3f9;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 920px) {
+  #imageTiles {
+    max-width: 689px;
+    height: 156px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #imageTiles {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tileImage {
+    height: 156px;
+    width: auto;
+  }
+}

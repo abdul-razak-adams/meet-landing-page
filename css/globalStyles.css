@@ -7,23 +7,32 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   scroll-behavior: smooth;
   background-color: #fafafafa;
-  max-width: 100vw;
+  width: 100vw;
   font-size: 18px;
   line-height: 26px;
   color: #87879d;
+  font-weight: 500px;
+  overflow-x: hidden;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  overflow-x: hidden;
+
   /* background-color: aqua; */
   /* overflow-x: hidden; */
 }
 .button {
   border: none;
   outline: none;
+}
+h1,
+h2 {
+  font-weight: 900;
 }
 h1 {
   color: #28283d;
