@@ -1,41 +1,38 @@
-.header {
+#header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 61px;
-  /* background-color: #4d96a9; */
   width: 100%;
   padding-top: 80px;
 }
 
-#logo {
+.logo {
   width: 119px;
   height: 28px;
 }
-#logo img {
+.logo img {
   width: 100%;
   height: 100%;
 }
 
-#hero {
+.hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  width: 105%;
   gap: 50px;
   height: 358px;
-  /* background-color: #855fb1; */
 }
 .heroImageDesktop {
   width: 100%;
 }
-#heroImageTablet {
+.heroImageTablet {
   display: none;
   width: 105%;
 }
-#titleContainer {
+.titleContainer {
   max-width: 540px;
   min-width: 431px;
   height: 304px;
@@ -48,12 +45,11 @@
   text-align: center;
 }
 
-#titleButtons {
+.titleButtons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 300px;
-  /* background-color: #4d96a9; */
 }
 
 .button {
@@ -79,14 +75,14 @@
 }
 
 @media screen and (max-width: 920px) {
-  #hero {
+  .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: auto;
     gap: 72px;
   }
-  #titileContainer {
+  .titileContainer {
     width: 80%;
     height: auto;
     min-width: none;
@@ -98,23 +94,22 @@
   .heroImageDesktop {
     display: none;
   }
-  #heroImageTablet {
+  .heroImageTablet {
     display: block;
   }
-  #titleButtons {
+  .titleButtons {
     justify-content: space-between;
   }
 }
 
 @media screen and (max-width: 510px) {
-  #titleButtons {
+  .titleButtons {
     flex-direction: column;
     width: 300px;
     gap: 20px;
     padding: 0px 20px;
-    /* background-color: #4d96a9; */
   }
-  #titleContainer {
+  .titleContainer {
     width: 100%;
 
     gap: 50px;

@@ -30,7 +30,7 @@
   border-radius: 100%;
 }
 
-#imageTiles {
+.imageTiles {
   margin-top: 64px;
   max-width: 1110px;
   height: 242px;
@@ -46,7 +46,7 @@
   width: 100%;
 }
 
-#about {
+.about {
   width: 540px;
   height: 240px;
   margin-top: 80px;
@@ -57,7 +57,7 @@
   text-align: center;
   overflow-x: hidden;
 }
-#overline {
+.overline {
   color: #8fe3f9;
   text-transform: uppercase;
   font-size: 16px;
@@ -67,14 +67,14 @@
   margin-bottom: 16px;
 }
 @media screen and (max-width: 920px) {
-  #imageTiles {
+  .imageTiles {
     max-width: 689px;
     height: 156px;
   }
 }
 
 @media screen and (max-width: 510px) {
-  #imageTiles {
+  .imageTiles {
     height: auto;
     display: flex;
     flex-wrap: wrap;

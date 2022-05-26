@@ -12,20 +12,17 @@ body {
   line-height: 26px;
   color: #87879d;
   font-weight: 500px;
-  overflow-x: hidden;
+  margin: auto;
 }
 
-.container {
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   overflow-x: hidden;
-
-  /* background-color: aqua; */
-  /* overflow-x: hidden; */
 }
+
 .button {
   border: none;
   outline: none;
