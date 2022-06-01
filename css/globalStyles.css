@@ -26,6 +26,14 @@ body {
 .button {
   border: none;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.button:hover > span {
+  color: #87879d;
 }
 h1,
 h2 {
